@@ -18,5 +18,15 @@
   "homepage": "https://github.com/BrunoKrugel/jest-ci#readme",
   "dependencies": {
     "jest": "^27.5.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": ["./src/**"],
+    "coverageReporters": ["json", "text-summary"],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    }
   }
 }
